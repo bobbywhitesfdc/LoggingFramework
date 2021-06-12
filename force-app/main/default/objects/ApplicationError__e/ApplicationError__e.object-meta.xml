@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <deploymentStatus>Deployed</deploymentStatus>
-    <description>Publish an ErrorLogging event immediately so that it survives a transaction rollback</description>
-    <eventType>HighVolume</eventType>
-    <label>Application Error</label>
-    <pluralLabel>Application Errors</pluralLabel>
-    <publishBehavior>PublishImmediately</publishBehavior>
-</CustomObject>
