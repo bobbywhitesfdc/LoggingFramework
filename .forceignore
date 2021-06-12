@@ -1,0 +1,7 @@
+# Exclude these files from pull/push
+
+package.xml
+
+# Ignore profiles
+force-app/main/default/profiles
+force-app/main/default/applications
