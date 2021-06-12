@@ -34,7 +34,7 @@
             </value>
         </inputParameters>
     </actionCalls>
-    <apiVersion>52.0</apiVersion>
+    <apiVersion>51.0</apiVersion>
     <constants>
         <description>DummyValue for my Application</description>
         <name>MyApplication</name>
