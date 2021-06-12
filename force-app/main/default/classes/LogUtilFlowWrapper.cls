@@ -1,5 +1,5 @@
 public class LogUtilFlowWrapper {
-    @InvocableMethod(label='Log Flow Error')
+    @InvocableMethod(label='Log Flow Error' category='Logging')
     public static void logFlowError(List<LogFaultDetail> faults) {
         for(LogFaultDetail current : faults) {
             LogUtil.logFlowFault(current.appName

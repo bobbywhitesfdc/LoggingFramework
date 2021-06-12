@@ -4,7 +4,7 @@ public class LogUtilFlowWrapper_Test {
         // Assumptions that are constants in the Flow itself
         final String APP='MyTestApplication';
         final String FLOWNAME='TestFlowFault';
-        final String MSG='This error occurred when the flow tried to create records: REQUIRED_FIELD_MISSING: Required fields are missing: [LastName, Compa';
+        final String MSG='This error occurred when the flow tried to create records: REQUIRED_FIELD_MISSING:';
         final String FLOWELEMENT='CreateBadLeadRecord';
         
         Test.startTest();
@@ -32,6 +32,6 @@ public class LogUtilFlowWrapper_Test {
         System.AssertEquals(null,logs[0].StackTrace__c);
         System.AssertEquals('Flow',logs[0].Context__c);
         System.AssertEquals(null,logs[0].RelatedRecordId__c);
-        System.AssertEquals(MSG,logs[0].ErrorMessage__c);
+        System.Assert((''+logs[0].ErrorMessage__c).startsWith(MSG));
     }
 }
